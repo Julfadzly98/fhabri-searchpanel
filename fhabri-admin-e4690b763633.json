@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "fhabri-admin",
+  "private_key_id": "e4690b7636332c274d4d3320d0d3fed610caaf2d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC6L1XG6blfbfBb\nFwVYbViSYQIFeByT23O8tTU/u4ECZjJgyBTBNNfWx0qA85MLNrz/cYuNt8euKDF3\neJ1uuI2dF+LfsrNxQG5U6GoYxXPraZnifanP4bvuU7v+chtvOjt6DdEYIyrDYkUu\nDG/Iq/Mj7SqTF15kd2OOfddMy5dSSJ6UBNJyxEbNYxpNUUvSrX5syq2q3UbFweg0\nv2J3AWV8x9WvY4UDj614mQ1funZWsOBIT6cb6fA2gUPNJpm48WtbIT63Aiq5zIXh\n4FaY7MGBIRNEKS1mO2D5+C+T/NvAcbxSs5HybO/SGoLqqt5ZsadIWvOcyWPvynoT\nNC2dwQMLAgMBAAECggEAHUtnXAXYX0swCf+5nUE53MZGCCWZnCtnrtB1kWfnk5YQ\nOn7LbTRAUGXzs2MfxsrqZT2GBLAJoL29ksZilvzozfKShY9bgT1EXuMMFoZdh96K\nEkNNcw0EgdT2URcTzqYYnPVhlJer7ylzfccCgPjf0nj1kvFBWTNucbQb1SnPeb2j\nU5daIUPoRIMlkNkbT6S1/GUPIUkB7+VlHgm23bbmCFo/56qDDZGX4Z09J3Qrrt1y\nvRRifx30mTRwnkb++ZkvP0HNJpA8XNkCKDGATuwPWJw7Ule5clmHf06kavticfPF\ncycZ2WwF2dHKcqaZ/VFUSuujUk5CF625ZvToEPDH6QKBgQDc27OG4wJSz0d216l4\nrEDOOUQ8H6udl9V832PWMp+Z3KsRMxXDLWVxCCJPtKp7TUIaZp/RucefHfRtZPxZ\nS+qufny8P3pqo8LHyeT8UrBqfJhS71DZZw3EYjD+TM+ysTiEW/1Fz561slPExmOr\nodsr75KxLdexmNzqjwKzYe7HNwKBgQDXz0X03Hpj/4u+XxJiJbAAXvH2FSANtAjx\nvYIF0GZNs1IlVbi/rLjig3PzFdtcs9H9DqcDoWWLiGyvA8CgUr1YzzXdj9m0IEP5\n/pF5CCcU/PKlLH4yj/DMqRp1Uc6UDV9qjaAehoLOcKcQ6wLRqoGpAzuUZxwGFp2x\nS9i5GxZkzQKBgQC692JrdhGpeL/O45McDPZvnhsdqtHlf3vDUnl6AzEJV72Zud1a\ndTvDDFe/kfogl662GtqA+Pz8vqcFVNAr6BCr13hRBIvlauyhpVCsKnQeMYvh6aZP\n5OXKsjU3kl7hrxVhN16ZksGQn346vpfx2/tmnlFYnK5UMkwSZS6sHOO+0QKBgQCx\nwntfC9SMVcvnjSv5SA3G4G3xQslaQDc11+EnpNb/nXtGYWuCBmVrvtddHV3I6B1J\nki4joWehHUhYiIC8DisE4fj+fSTXZ9RWMUfmJ775XLkJMLLqNwIjsg6nIDFGZhV4\nERwYyLcqEESsfMefqBCRBKaowJ2mri5KAa2MGzHA6QKBgFB1A16pR5DRMDbfx9yg\nqWzSfMt6EieQyqoVrZgVE7/eXR8xqMUHzAhf3mPZsrJMM0FUCtK5J1fdUsOLVpec\n0HtQInIMGOpYZng6vhL0YTBmhh2j6u/snAyGz8pzMltf/eEVso2kKkTNfBwXzvuB\nRojUvyA4OJWPA8nieVMncNlo\n-----END PRIVATE KEY-----\n",
+  "client_email": "fhabri-admin@fhabri-admin.iam.gserviceaccount.com",
+  "client_id": "107823593866994856430",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/fhabri-admin%40fhabri-admin.iam.gserviceaccount.com"
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AMR | SDK</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Akademi Memanah Raudhah Sandakan</h1>
+    <h2>Search Data</h2>
+    <br>
+    <form>
+        <input type="text" name="query" value="{{ query }}">
+        <input type="submit" value="Search">
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Date Time</th>
+                <th>Name</th>
+                <th>Attitude</th>
+                <th>Gred</th>
+            </tr>
+        </thead>
+        <br>
+        <br>
+        <br>
+        <br>
+        <tbody>
+            {% for row in results %}
+            <tr>
+                <td>{{ row[0] }}</td>
+                <td>{{ row[1] }}</td>
+                <td>{{ row[2] }}</td>
+                <td>{{ row[3] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>          
+    </table>
+</body>
+</html>
+
+

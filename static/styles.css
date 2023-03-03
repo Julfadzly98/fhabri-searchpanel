@@ -1,0 +1,79 @@
+/* Style the body and the h1 element */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #444444;
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: 950;
+}
+
+h2 {
+    text-align: center;
+    color: #6d6d6d;
+    margin-top: 50px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+/* Style the search form */
+form {
+    text-align: center;
+    margin-top: 50px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+/* Style the table */
+table {
+    margin-top: 50px;
+    border-collapse: collapse;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    background-color: #ff0000;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
