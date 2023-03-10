@@ -10,7 +10,7 @@ service = build('sheets', 'v4', credentials=creds)
 # Define a function to retrieve the data from the Google Sheets spreadsheet
 def get_data():
     spreadsheet_id = '1tLRctGGzHwFZnGh-pEP1XU-6BLhEdekPQw08wZSyf9Q'
-    range_name = 'Sheet1!A1:D5'
+    range_name = 'Sheet1!A1:AX64'
     result = service.spreadsheets().values().get(spreadsheetId=spreadsheet_id, range=range_name).execute()
     values = result.get('values', [])
     return values
