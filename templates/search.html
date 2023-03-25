@@ -2,211 +2,269 @@
 <html>
 <head>
     <title>AMTR</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
     <link rel="icon" type="image/x-icon" href="static/Picture2.png">
 </head>
 <body>
     <br>
     <br>
-    <br>
-    <img src="static/Picture2.png">
-    <br>
-    <br>
+    <img src="static/Picture2.png" style="width: 20%;">
     <h1>Akademi Memanah Tradisional Raudhah</h1>
-    <h2>Laporan Prestasi</h2>
     <br>
+
     <form>
-        <input type="text" name="query" value="{{ query }}">
+        <input type="text" name="query" value="{{ query }}" >
+        <br>
+        <br>
         <input type="submit" value="Search">
     </form>
-    <table>
-        
-        
-        <thead>
-            <caption><b>Prestasi Keseluruhan</b></caption>
-            <tr>
-                <th>Nama</th>
-                <th>Sekolah</th>
-                <th>Kehadiran</th>
-                <th>Adab</th>
-                <th>Record</th>
-            </tr>
-        </thead>
 
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <tbody>
-            {% for row in results %}
-            <tr>
-                <td>{{ row[0] }}</td>
-                <td>{{ row[1] }}</td>
-                <td>{{ row[2] }}</td>
-                <td>{{ row[3] }}</td>
-                <td>{{ row[4] }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>          
-    </table>
+    <br>
+    <br>
+                <table style="width: 800px; margin: 0 auto;">
+
+                    {% for row in results %}
+                    <caption><b>Keputusan Keseluruhan</b></caption>
+                    <tr>
+                        <th>Nama</th>
+                        <td>{{ row[0] }}</td>
+                    </tr>
+                        <th>Sekolah</th>
+                        <td>{{ row[1] }}</td>
+                    <tr>
+                        <th>Kehadiran</th>
+                        <td>{{ row[2] }}</td>
+                    </tr>
+                        <th>Adab</th>
+                        <td>{{ row[3] }}</td>
+                    <tr></tr>
+                        <th>Record</th>
+                        <td>{{ row[4] }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <table class="table-level" style="width: 800px; margin: 0 auto;">
 
 
-    <table class="table-level">
-        <thead class="th-level">
-            <caption><b>Level 1</b></caption>
-            <tr>
-                <th>Buka/Pasang-Busur</th>
-                <th>Buka-Langkah</th>
-                <th>Stance</th>
-                <th>Nocking</th>
-                <th>Kedudukan-fletcher</th>
-                <th>Tarik-tali</th>
-                <th>Membidik</th>
-                <th>Anchor</th>
-                <th>Kepaze</th>
-                <th>Tempoh-Hold</th>
-                <th>Release</th>
-                <th>Postur-Selepas-Release</th>
-                <th>Adab</th>
-                <th>5m-Score</th>
-                <th>Retrieve-Arrow</th>
-                <th>Keselamatan</th>
-                <th>Pengendalian-Peralatan</th> 
-            </tr>
-        </thead>
-        <br>
-        <br>
-        <br>
-        <br>
-        <tbody class="tb-level">
-            {% for row in results %}
-            <tr>
-                <td>{{ row[5] }}</td>
-                <td>{{ row[6] }}</td>
-                <td>{{ row[7] }}</td>
-                <td>{{ row[8] }}</td>
-                <td>{{ row[9] }}</td>
-                <td>{{ row[10] }}</td>
-                <td>{{ row[11] }}</td>
-                <td>{{ row[12] }}</td>
-                <td>{{ row[13] }}</td>
-                <td>{{ row[14] }}</td>
-                <td>{{ row[15] }}</td>
-                <td>{{ row[16] }}</td>
-                <td>{{ row[17] }}</td>
-                <td>{{ row[18] }}</td>
-                <td>{{ row[19] }}</td>
-                <td>{{ row[20] }}</td>
-                <td>{{ row[21] }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>          
-    </table>
-
-
-    <table class="table-level">
-        <thead class="th-level">
-            <caption><b>Level 2</b></caption>
-            <tr>
-                <th>Buka/Pasang-Busur</th>
-                <th>Fast Shooting</th>
-                <th>10m Score</th>
-                <th>Adab</th>
-                <th>Panah Serentak</th>
-                <th>Retrieve Arrow</th>
-                <th>Membidik</th>
-                <th>Tempoh Hold</th>
-                <th>Release</th>
-                <th>Postur Selepas Release</th>
-                <th>Holding Arrow</th>
-                <th>Kapeze</th>
-                <th>Pelbagai Posisi</th>
-                <th>Memanah Dinamik</th>
-                <th>Kedudukan Siku</th>
-                <th>Asas Level 1</th>
-            </tr>
-        </thead>
-        <br>
-        <br>
-        <br>
-        <br>
-        <tbody class="tb-level">
-            {% for row in results %}
-            <tr>
-                <td>{{ row[22] }}</td>
-                <td>{{ row[23] }}</td>
-                <td>{{ row[24] }}</td>
-                <td>{{ row[25] }}</td>
-                <td>{{ row[26] }}</td>
-                <td>{{ row[27] }}</td>
-                <td>{{ row[28] }}</td>
-                <td>{{ row[29] }}</td>
-                <td>{{ row[30] }}</td>
-                <td>{{ row[31] }}</td>
-                <td>{{ row[32] }}</td>
-                <td>{{ row[33] }}</td>
-                <td>{{ row[34] }}</td>
-                <td>{{ row[35] }}</td>
-                <td>{{ row[36] }}</td>
-                <td>{{ row[37] }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>          
-    </table>
-
-
-    <table class="table-level">
-        <thead class="th-level">
-            <caption><b>Level 3</b></caption>
-            <tr>
-                <th>15m Score</th>
-                <th>Fast Shooting</th>
-                <th>Adab/Attitude</th>
-                <th>Panah Serentak</th>
-                <th>Membidik</th>
-                <th>Tempoh Hold</th>
-                <th>Release</th>
-                <th>Postur Selepas Release</th>
-                <th>Holding Arrow</th>
-                <th>Asas Level 2</th>
-                <th>Penyertaan Pertandingan</th>
-            </tr>
-        </thead>
-        <br>
-        <br>
-        <br>
-        <br>
-        <tbody class="tb-level">
-            {% for row in results %}
-            <tr>
-                <td>{{ row[38] }}</td>
-                <td>{{ row[39] }}</td>
-                <td>{{ row[40] }}</td>
-                <td>{{ row[41] }}</td>
-                <td>{{ row[42] }}</td>
-                <td>{{ row[43] }}</td>
-                <td>{{ row[44] }}</td>
-                <td>{{ row[45] }}</td>
-                <td>{{ row[46] }}</td>
-                <td>{{ row[47] }}</td>
-                <td>{{ row[48] }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>          
-    </table>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+                    {% for row in results %}
+                    <caption><b>Level 1</b></caption>
+                    <tr>
+                        <th>Buka/Pasang-Busur</th>
+                        <td>{{ row[5] }}</td>
+                    </tr>
+                    <tr>
+                        <th>Buka-Langkah</th>
+                        <td>{{ row[6] }}</td>
+                    </tr>
+                    <tr>
+                        <th>Stance</th>
+                        <td>{{ row[7] }}</td>
+                    </tr>
+                    <tr>
+                        <th>Nocking</th>
+                        <td>{{ row[8] }}</td>
+                    </tr>
+                    <tr>
+                        <th>Kedudukan-fletcher</th>
+                        <td>{{ row[9] }}</td>
+                    <tr>
+                        <th>Tarik-tali</th>
+                        <td>{{ row[10] }}</td>
+                    </tr>
+                    <tr>
+                        <th>Membidik</th>
+                        <td>{{ row[11] }}</td>
+                    </tr>
+                    <tr>
+                        <th>Anchor</th>
+                        <td>{{ row[12] }}</td>
+                    </tr>
+                    <tr>
+                        <th>Kepaze</th>
+                        <td>{{ row[13] }}</td>
+                    </tr>
+                    <tr>
+                        <th>Tempoh-Hold</th>
+                        <td>{{ row[14] }}</td>
+                    </tr>
+                    <tr>
+                        <th>Release</th>
+                        <td>{{ row[15] }}</td>
+                    </tr>
+                    <tr>
+                        <th>Postur-Selepas-Release</th>
+                        <td>{{ row[16] }}</td>
+                    </tr>
+                    <tr>
+                        <th>Adab</th>
+                        <td>{{ row[17] }}</td>
+                    </tr>
+                    <tr>
+                        <th>5m-Score</th>
+                        <td>{{ row[18] }}</td>
+                    </tr>
+                    <tr>
+                        <th>Retrieve-Arrow</th>
+                        <td>{{ row[19] }}</td>
+                    </tr>
+                    <tr>
+                        <th>Keselamatan</th>
+                        <td>{{ row[20] }}</td>
+                    </tr>
+                    <tr>
+                        <th>Pengendalian-Peralatan</th>
+                        <td>{{ row[21] }}</td>
+                    </tr>
+                    {% endfor %}
+            </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
 
 
 
 </body>
+
+
+<footer>
+    <div class="footer">MakeByLove @ Julfadzly98</div>
+</footer>
 </html>
 
 
+<style>
+    /* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Search form styles */
+form {
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    width: 20%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 10%;
+    padding: 10px;
+    margin-top: 10px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #fff;
+    background-color: #590000;
+    border: 1px solid #590000;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffffff;
+    border-color: #590000;
+    color: black;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    text-align: center;
+    color: #ffffff;
+    background-color: #590000;
+    padding: 10px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+th {
+    width: 50%;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1em 0;
+    background-color: #590000;
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+    table, th, td {
+        font-size: 14px;
+    }
+
+    input[type="text"] {
+        font-size: 14px;
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    /* Left-align the th elements */
+    th {
+        text-align: left;
+    }
+
+    /* Right-align the td elements */
+    td {
+        text-align: right;
+    }
+
+    /* Reorder the table columns for mobile view */
+    tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    td {
+        text-align: right;
+    }
+}
+
+
+
+</style>

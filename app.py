@@ -23,16 +23,17 @@ app = Flask(__name__)
 def search():
     query = request.args.get('query')
     data = get_data()
-    x = 0
     results = []
     if query:
         for row in data:
             if query.lower() in [str(val).lower() for val in row]:
                 results.append(row)
     else:
-        0
+        query = ""
     return render_template('search.html', query=query, results=results)
+
 
 # Run the Flask app
 if __name__ == '__main__':
-    app.run(port=5001, debug=True)
+    app.run(port=5005, debug=True)
+
